@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.biplav.e_softwarica.fragment.AboutUsFragment;
 import com.biplav.e_softwarica.fragment.AddStudentFragment;
@@ -21,6 +23,10 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
+        getSupportActionBar().hide(); //hide the title bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN); //enables fullscreen
         setContentView(R.layout.activity_dashboard);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav);
@@ -28,6 +34,7 @@ public class DashboardActivity extends AppCompatActivity {
 
     }
 
+    //to show fragent
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
