@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="260dp"
                     app:srcCompat="@android:drawable/ic_menu_delete" />
 
 
@@ -245,7 +245,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="260dp"
                     app:srcCompat="@android:drawable/ic_menu_delete" />
 
 
